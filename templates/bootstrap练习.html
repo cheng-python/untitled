@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <!--移动设备优先-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <!--引入bootstrap核心css-->
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <title>Title</title>
+    <style>
+        @media (min-width: 700px) {
+            .aa{
+                height: 100px;
+                background: yellow;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container" style="border:red 1px solid">第一个</div>
+<div class="container-fluid" style="border: #2aabd2 1px solid">第二个</div>
+
+<!--栅格系统的分配-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-1 aa">haha</div>
+        <div class="col-sm-1 aa">haha</div>
+        <div class="col-sm-1 aa">haha</div>
+        <div class="col-sm-1 aa">haha</div>
+        <div class="col-sm-1 aa">haha</div>
+        <div class="col-sm-1 aa">haha</div>
+        <div class="col-sm-1 aa">haha</div>
+        <div class="col-sm-1 aa">haha</div>
+        <div class="col-sm-1 aa">haha</div>
+        <div class="col-sm-1 aa">haha</div>
+        <div class="col-sm-1 aa">haha</div>
+        <div class="col-sm-1 aa">haha</div>
+    </div>
+
+    <!--均匀分配-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3">hehe</div>
+            <div class="col-sm-3">hehe</div>
+            <div class="col-sm-3">hehe</div>
+            <div class="col-sm-3">hehe</div>
+        </div>
+    </div>
+</div>
+
+
+<!--嵌套-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-4 aa">aa</div>
+        <div class="col-sm-4 aa">aa</div>
+        <div class="col-sm-4 aa">aa</div>
+    </div>
+</div>
+
+<!--列偏移-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-4 aa col-sm-offset-8">aa</div>
+
+    </div>
+
+</div>
+<div class="row">
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+</div>
+<div class="row">
+  <div class="col-md-8">.col-md-8</div>
+  <div class="col-md-4">.col-md-4</div>
+</div>
+<div class="row">
+  <div class="col-md-4">.col-md-4</div>
+  <div class="col-md-4">.col-md-4</div>
+  <div class="col-md-4">.col-md-4</div>
+</div>
+<div class="row">
+  <div class="col-md-6">.col-md-6</div>
+  <div class="col-md-6">.col-md-6</div>
+</div>
+
+</body>
+</html>
