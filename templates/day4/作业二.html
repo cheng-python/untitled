@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../static/css/bootstrap.min.css">
+    <script src="../../static/js/jquery-3.3.1.min.js"></script>
+    <script src="../../static/js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            $("#myModal").modal({
+                // show: true,         //模态框在页面加载后立即显示出来
+                // backdrop: false,    // 当模态框弹出时关闭页面的阴影
+                // keyboard: true,    // 关闭esc键隐藏模态框的功能
+            });
+        })
+    </script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse ">
+    <div class="container-fluid">
+        <!--生成导航条的标题-->
+        <div class="navbar-header">
+            <a href="" class="navbar-brand">员工管理系统V1.0</a>
+        </div>
+        <!--导航条内容中-->
+        <div class="form-inline text-right">
+            <div class="form-group  ">
+                <label for="name" style="color: white">欢迎：</label>
+                <a href="" style="color: blue" id="name">小黑</a>
+            </div>
+            <div class="form-group ">
+                <label style="color: white">退出登录</label>
+                <span class="glyphicon glyphicon-log-out" style="color: white"></span>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid">
+    <div class="col-sm-2">
+        <div class="panel-group" id="panel_group">
+            <!--面板-->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="panel-title list-group-item list-group-item-success">
+                        <a href="#aa" data-toggle="collapse" data-parent="#panel_group">用户管理</a>
+                    </div>
+                </div>
+                <div class="panel-collapse collapse " id="aa">
+                    <div class="panel-body">
+                        <button class="btn btn-primary container-fluid">
+                            用户列表
+                        </button>
+                        <br>
+                        <button class="btn btn-primary ">
+                            用户添加
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--面板-->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="panel-title list-group-item list-group-item-info">
+                        <a href="#bb" data-toggle="collapse" data-parent="#panel_group">类别管理</a>
+                    </div>
+                </div>
+                <div class="panel-collapse collapse" id="bb">
+                    <div class="panel-body">
+                        <p>这是面板的内容</p>
+                        <p>这是面板的内容</p>
+                        <p>这是面板的内容</p>
+                        <p>这是面板的内容</p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="panel-title list-group-item list-group-item-danger">
+                        <a href="#cc" data-toggle="collapse" data-parent="#panel_group">图书管理</a>
+                    </div>
+                </div>
+                <div class="panel-collapse collapse" id="cc">
+                    <div class="panel-body">
+                        <p>这是面板的内容</p>
+                        <p>这是面板的内容</p>
+                        <p>这是面板的内容</p>
+                        <p>这是面板的内容</p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="panel-title list-group-item list-group-item-heading">
+                        <a href="#dd" data-toggle="collapse" data-parent="#panel_group">订单管理</a>
+                    </div>
+                </div>
+                <div class="panel-collapse collapse" id="dd">
+                    <div class="panel-body">
+                        <p>这是面板的内容</p>
+                        <p>这是面板的内容</p>
+                        <p>这是面板的内容</p>
+                        <p>这是面板的内容</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-10">
+        <h1>用户管理</h1>
+        <ul class="nav nav-tabs">
+            <li class="active "><a href="#yong" data-toggle="tab">用户列表</a></li>
+            <li class=""><a href="#tian" data-toggle="tab">地址列表</a></li>
+        </ul>
+
+        <!--导航栏对应的内容  标签内容组-->
+        <div class="tab-content ">
+            <!--标签内容面板-->
+            <div class="tab-pane active " id="yong">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-9">
+
+                    <form class="navbar-form navbar-left " role="search">
+                        <span>姓名：</span>
+                        <div class="form-group">
+                            <input type="text" class="form-control" >
+                        </div>
+                        <span>手机：</span>
+                        <div class="form-group">
+                            <input type="text" class="form-control" >
+                        </div>
+                        <span>激活状态：</span>
+                        <select class="form-control" >
+                            <option>---请选择---</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                        <button type="submit" class="btn btn-primary ">查询</button>
+                    </form>
+                </div>
+                <table class="table table-bordered">
+                  <tr >
+                      <th >ID</th>
+                      <th >用户名</th>
+                      <th>密码</th>
+                      <th>生日</th>
+                      <th>手机</th>
+                      <th>状态</th>
+                      <th class="text-center">操作</th>
+                  </tr>
+                  <tr>
+                      <td>1</td>
+                      <td>小黑</td>
+                      <td>******</td>
+                      <td>2012/12/12</td>
+                      <td>13242xxxx25</td>
+                      <td>冻结</td>
+                      <td class="text-center">
+                          <button class="btn btn-primary">修改</button>
+                          <button class="btn btn-danger">删除</button>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>1</td>
+                      <td>小黑</td>
+                      <td>******</td>
+                      <td>2012/12/12</td>
+                      <td>13242xxxx25</td>
+                      <td>冻结</td>
+                      <td class="text-center">
+                          <button class="btn btn-primary">修改</button>
+                          <button class="btn btn-danger">删除</button>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>1</td>
+                      <td>小黑</td>
+                      <td>******</td>
+                      <td>2012/12/12</td>
+                      <td>13242xxxx25</td>
+                      <td>冻结</td>
+                      <td class="text-center">
+                          <button class="btn btn-primary">修改</button>
+                          <button class="btn btn-danger">删除</button>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>1</td>
+                      <td>小黑</td>
+                      <td>******</td>
+                      <td>2012/12/12</td>
+                      <td>13242xxxx25</td>
+                      <td>冻结</td>
+                      <td class="text-center">
+                          <button class="btn btn-primary">修改</button>
+                          <button class="btn btn-danger">删除</button>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>1</td>
+                      <td>小黑</td>
+                      <td>******</td>
+                      <td>2012/12/12</td>
+                      <td>13242xxxx25</td>
+                      <td>冻结</td>
+                      <td class="text-center">
+                          <button class="btn btn-primary">修改</button>
+                          <button class="btn btn-danger">删除</button>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>1</td>
+                      <td>小黑</td>
+                      <td>******</td>
+                      <td>2012/12/12</td>
+                      <td>13242xxxx25</td>
+                      <td>冻结</td>
+                      <td class="text-center">
+                          <button class="btn btn-primary">修改</button>
+                          <button class="btn btn-danger">删除</button>
+                      </td>
+                  </tr>
+                </table>
+                <br>
+                <div class="text-center">
+                    <button class="btn btn-default">previous</button>
+                    <button class="btn btn-default">Next</button>
+                </div>
+                <br>
+                <div class="alert alert-success alert-dismissible" role="alert">
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <strong>删除成功!</strong>
+                </div>
+                <br>
+                <div class="alert alert-danger alert-dismissible" role="alert">
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <strong>删除失败!</strong> java.lang.RuntimeEception:无效数字.
+                </div>
+
+
+            </div>
+            <div class="tab-pane" id="tian">
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" data-backdrop="false" data-keyboard="false">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <!--模态框的头-->
+                            <div class="modal-header">
+                                <!--决定关闭模态框效果的是 data-dismiss="modal"-->
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title">用户编辑</h4>
+                            </div>
+                            <!--模态框的内容-->
+                            <div class="modal-body">
+                                <form action="">
+                                    姓 名 &nbsp;&nbsp;：<input type="text"> <br>
+                                    密 码 &nbsp;&nbsp;：<input type="text"> <br>
+                                    年 龄 &nbsp;&nbsp;：<input type="text"> <br>
+                                    生 日 &nbsp;&nbsp;：<input type="text"> <br>
+                                    手机号&nbsp;：<input type="text"> <br>
+                                    <span>激活状态：</span>
+                                    <select class="" >
+                                          <option>---请选择---</option>
+                                          <option>1</option>
+                                          <option>2</option>
+                                          <option>3</option>
+                                          <option>4</option>
+                                    </select>
+
+
+
+                                </form>
+
+                            </div>
+                            <!--模态框的脚-->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">保存</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">取消</button>
+                            </div>
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
+            </div>
+
+        </div>
+
+            </div>
+
+</div>
+
+
+</body>
+</html>

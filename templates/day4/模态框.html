@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../static/css/bootstrap.min.css">
+    <script src="../../static/js/jquery-3.3.1.min.js"></script>
+    <script src="../../static/js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            $("#myModal").modal({
+                // show: true,         //模态框在页面加载后立即显示出来
+                // backdrop: false,    // 当模态框弹出时关闭页面的阴影
+                // keyboard: true,    // 关闭esc键隐藏模态框的功能
+            });
+        })
+    </script>
+
+</head>
+<body>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" data-backdrop="false" data-keyboard="false">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <!--模态框的头-->
+            <div class="modal-header">
+                <!--决定关闭模态框效果的是 data-dismiss="modal"-->
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">用户编辑</h4>
+            </div>
+            <!--模态框的内容-->
+            <div class="modal-body">
+                <p>One fine body&hellip;</p>
+            </div>
+            <!--模态框的脚-->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+</body>
+</html>

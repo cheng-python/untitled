@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <!--Bootstrap核心css-->
+    <link rel="stylesheet" href="../../static/css/bootstrap.min.css">
+    <!--jquery-->
+    <script src="../../static/js/jquery-3.3.1.min.js"></script>
+    <!--Bootstrap的js-->
+    <script src="../../static/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+<div class="progress">
+    <div class="progress-bar progress-bar-info" style=" width: 20%;">
+        60%
+    </div>
+</div>
+
+<ol class="breadcrumb">
+    <li><a href="#">分类</a></li>
+    <li class="active">小说</li>
+</ol>
+
+
+<nav>
+    <ul class="pagination pagination-sm">
+        <li class="disabled">
+            <a href="#" class="disabled">
+                <span aria-hidden="true">&laquo;</span>
+            </a>
+        </li>
+        <li class="active"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li>
+            <a href="#">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<nav aria-label="...">
+    <ul class="pager">
+        <li class="previous"><a href="#">Previous</a></li>
+        <li class="next"><a href="#">Next</a></li>
+    </ul>
+</nav>
+
+<div class="alert alert-success">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    <strong>Warning!</strong> Better check yourself, you're not looking too good.
+</div>
+<div class="alert alert-info">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    <strong>Warning!</strong> Better check yourself, you're not looking too good.
+</div>
+<div class="alert alert-warning">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    <strong>Warning!</strong> Better check yourself, you're not looking too good.
+</div>
+<div class="alert alert-danger">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    <strong>Warning!</strong> Better check yourself, you're not looking too good.
+</div>
+<div class="alert alert-success">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    <strong>Warning!</strong> <a href="" class="alert-link">Better check yourself, you're not looking too good</a>.
+</div>
+
+<div class="container">
+    <div class="btn-group">
+        <div class="col-sm-3">
+
+            <button class="btn btn-default">按钮</button>
+            <button class="btn btn-default">按钮</button>
+            <button class="btn btn-default">按钮</button>
+        </div>
+        <div class="col-sm-3">
+            <div class="btn-group btn-group-justified">
+                <a href="" class="btn btn-primary">按钮</a>
+                <a href="" class="btn btn-primary">按钮</a>
+                <a href="" class="btn btn-primary">按钮</a>
+            </div>
+
+        </div>
+        <div class="col-sm-2">
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button class="btn btn-danger">按钮</button>
+                </div>
+                <div class="btn-group">
+                    <button class="btn btn-danger">按钮</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="btn-group dropup">
+                <button class="btn btn-primary">上拉菜单</button>
+                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="">小明</a></li>
+                    <li><a href="">小白</a></li>
+                    <li><a href="">小红</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+    </div>
+
+</div>
+<br>
+<div class="dropdown">
+    <div class="row">
+        <div class="col-sm-3">
+
+            <!--准备下拉菜单的触发器-->
+            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                点我下拉<span class="caret"></span>
+            </button>
+            <!--下拉菜单的内容-->
+            <ul class="dropdown-menu">
+                <li><a href="">小明</a></li>
+                <li><a href="">小红</a></li>
+                <li><a href="">小白</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-3">
+                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                点我下拉 <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-header"><a href="">Python</a></li>
+                    <li class="disabled"><a href="">基础语法</a></li>
+                    <li><a href="">web</a></li>
+                    <li><a href="">爬虫</a></li>
+                    <li class="divider"><a href=""></a></li>
+                    <li class="dropdown-header"><a href="">Java</a></li>
+                    <li><a href="">基础语法</a></li>
+                    <li><a href="">web</a></li>
+                    <li><a href="">框架</a></li>
+                </ul>
+
+        </div>
+        <div class="col-sm-3">
+            <div class="btn-group-vertical">
+                <button class="btn btn-primary">按钮1</button>
+                <button class="btn btn-primary">按钮2</button>
+                <!--下拉菜单-->
+                <div class="btn-group">
+                    <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        点我触发下拉：<span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="">Python</a></li>
+                        <li><a href="">Java</a></li>
+                    </ul>
+            </div>
+    </div>
+
+        </div>
+
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</body>
+</html>

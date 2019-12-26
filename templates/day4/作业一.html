@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../static/css/bootstrap.min.css">
+    <script src="../../static/js/jquery-3.3.1.min.js"></script>
+    <script src="../../static/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse ">
+    <div class="container-fluid">
+        <!--生成导航条的标题-->
+        <div class="navbar-header">
+            <a href="" class="navbar-brand">员工管理系统V1.0</a>
+        </div>
+        <!--导航条内容中-->
+        <div class="form-inline text-right">
+            <div class="form-group  ">
+                <label for="name" style="color: white">欢迎：</label>
+                <a href="" style="color: blue" id="name">小黑</a>
+            </div>
+            <div class="form-group ">
+                <label style="color: white">退出登录</label>
+                <span class="glyphicon glyphicon-log-out" style="color: white"></span>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid">
+    <div class="col-sm-2">
+        <div class="panel-group" id="panel_group">
+            <!--面板-->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="panel-title">
+                        <a href="#aa" data-toggle="collapse" data-parent="#panel_group">用户管理</a>
+                    </div>
+                </div>
+                <div class="panel-collapse collapse " id="aa">
+                    <div class="panel-body">
+                        <button class="btn btn-primary container-fluid">
+                            用户列表
+                        </button>
+                        <br>
+                        <button class="btn btn-primary ">
+                            用户添加
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--面板-->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="panel-title">
+                        <a href="#bb" data-toggle="collapse" data-parent="#panel_group">类别管理</a>
+                    </div>
+                </div>
+                <div class="panel-collapse collapse" id="bb">
+                    <div class="panel-body">
+                        <p>这是面板的内容</p>
+                        <p>这是面板的内容</p>
+                        <p>这是面板的内容</p>
+                        <p>这是面板的内容</p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="panel-title">
+                        <a href="#cc" data-toggle="collapse" data-parent="#panel_group">图书管理</a>
+                    </div>
+                </div>
+                <div class="panel-collapse collapse" id="cc">
+                    <div class="panel-body">
+                        <p>这是面板的内容</p>
+                        <p>这是面板的内容</p>
+                        <p>这是面板的内容</p>
+                        <p>这是面板的内容</p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="panel-title">
+                        <a href="#dd" data-toggle="collapse" data-parent="#panel_group">订单管理</a>
+                    </div>
+                </div>
+                <div class="panel-collapse collapse" id="dd">
+                    <div class="panel-body">
+                        <p>这是面板的内容</p>
+                        <p>这是面板的内容</p>
+                        <p>这是面板的内容</p>
+                        <p>这是面板的内容</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-10">
+        <div class="jumbotron">
+            <h1>Hello, world!</h1>
+            <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+        </div>
+        <div class="alert alert-warning alert-dismissible" role="alert">
+            <h2><b>网站程序漏洞，继续修复！</b></h2>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h5>当前版本程序（v1.0）存在严重安全问题，容易造成攻击，请 <b>立即修复</b></h5>
+            <button class="btn btn-danger">立即修复</button>
+            <button class="btn btn-default">稍后处理</button>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">系统状态</div>
+            <br>
+            <div class="progress">
+                <span class="panel-title">内存使用率40%</span>
+                <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                    <span class="sr-only">40%</span></div>
+            </div>
+            <div class="progress">
+                <span class="panel-title">内存使用率20%</span>
+              <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                <span class="sr-only">20% Complete</span>
+              </div>
+            </div>
+            <div class="progress">
+                <span class="panel-title">内存使用率60%</span>
+              <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                <span class="sr-only">60% Complete (warning)</span>
+              </div>
+            </div>
+            <div class="progress">
+                <span class="panel-title">内存使用率80%</span>
+              <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                <span class="sr-only">80% Complete (danger)</span>
+              </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+</div>
+
+
+</body>
+</html>
